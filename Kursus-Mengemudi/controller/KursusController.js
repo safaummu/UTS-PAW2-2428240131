@@ -1,16 +1,17 @@
-const gymMemberModel = require('../models/kursusmodel');
+const gymMemberModel = require('../models/kursusModel');
 const { errorHttp } = require('../middlewares/errorHandler');
 
 exports.getAll = (req, res) => {
-  const { jenisMembership } = req.query;
-  res.json(kursusModel.getAll(jenisMembership));
+  const { j } = req.query;
+  res.json(kursusModel.getAll(jumlahSesi));
 };
+
 
 exports.getById = (req, res, next) => {
   const id = parseInt(req.params.id);
   const data = kursusModel.getById(id);
 
-  if (!data) return next(errorHttp(404, 'Member tidak ditemukan'));
+  if (!data) return next(errorHttp(404, 'peserta tidak ditemukan'));
 
   res.json(data);
 };
