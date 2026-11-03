@@ -6,7 +6,7 @@ const cors = require('cors');
 const logger = require('./middlewares/logger');
 const { notFoundHandler, errorHandler } = require('./middlewares/errorHandler');
 
-const gymMemberRoutes = require('./routes/gymMemberRoutes');
+const KursusMengemudiRoutes = require('./routes/KursusMengemudiRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 // ---------- Route per modul ----------
-app.use('/gym-members', gymMemberRoutes);
+app.use('/kursus'/ KursusMengemudiRoutes);
 
 // ---------- Handler 404 dan error handler (paling bawah) ----------
 app.use(notFoundHandler);
