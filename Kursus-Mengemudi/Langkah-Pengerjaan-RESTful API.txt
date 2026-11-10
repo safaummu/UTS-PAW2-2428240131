@@ -7,8 +7,8 @@ PathPendukung : InstrukturMengemudi
 PathUtama : PesertaKursus
 
 Model
-- prodiModel.js			=> PathPendukung => Contoh: InstrukturMengemudiModel.js
-- mahasiswaModel.js		=> PathUtama	 => Contoh: PesertaKursusModel.js
+- prodiModel.js			=> PathPendukung => Contoh: instrukturMengemudiModel.js
+- mahasiswaModel.js		=> PathUtama	 => Contoh: pesertaKursusModel.js
 
 Controller
 - prodiController.js		=> InstrukturMengemudiController.js
